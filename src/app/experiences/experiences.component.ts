@@ -12,8 +12,22 @@ export class ExperiencesComponent {
   {
     title: 'Stage ',
     underTitle: 'Mairie de Fougères',
-    description: "Développement de nouvelles fonctionnalités pour des sites webs développé en symfony et JavaScript.\n\nÉlaboration d'une interface permettant de regrouper les différents sites web des chaufferies de la ville en HTML, CSS et Javascript. \n\nLa connexion s'effectue avec LDAP.",
+    description: "Développement de nouvelles fonctionnalités pour des sites webs développé en symfony et JavaScript.\n\nÉlaboration d'une interface permettant de regrouper les différents sites web des chaufferies de la ville en HTML, CSS et Javascript. La connexion identifiant/mot de passe s'effectue avec LDAP.",
     year: '2022'
+  },
+  
+  {
+    title: 'Stage ',
+    underTitle: 'Lycée Jean-Paul II',
+    description: "Développement d'une interface web en PHP et MySQL permettant d'automatiser la création des groupes classes de premières et terminales",
+    year: '2023'
+  },
+
+  {
+    title: 'Apprentissage  ',
+    underTitle: 'DIRISI - POSA',
+    description: "Mise en place de modes opératoires organisationnelles pour l'outil Tanium afin d'aider les nouveaux utilisateurs dans les différentes procédure à effectuer (création, gestion des droits des comptes etc.).\n\nMise en place d'un tableau de bord type pour montrer les capacités de l'outil.\n\n Tanium est un outil permettant de surveiller la conformité d'un parc informatique à grande échelle.",
+    year: '2023'
   },
 ]
 
