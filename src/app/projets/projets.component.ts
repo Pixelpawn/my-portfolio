@@ -13,13 +13,13 @@ items = [
   {
     title: 'Système solaire',
     underTitle: 'Technologies utilisées : HTML et CSS',
-    description: "Mettre en place un service web fictif permettant de réserver des salles de réunion avec un digicode pour accéder aux salles",
+    description: "J'ai développé un site web sur le système solaire expliquant les caractéristiques des différents objets dans le système solaire",
     year: '2022'
   },
   {
     title: 'Digicode',
     underTitle: 'Technologies utilisées : PHP et MySQL',
-    description: "Mettre en place un service web fictif permettant de réserver des salles de réunion avec un digicode pour accéder aux salles",
+    description: "Mise en place un service web fictif permettant de réserver des salles de réunion avec un digicode pour accéder aux salles de réunion",
     year: '2022'
   },
 {
