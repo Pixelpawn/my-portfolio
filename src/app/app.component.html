@@ -1,5 +1,12 @@
+<!-- Navbar fixe -->
 <nav class="navbar">
-  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Accueil</a>
-  <a routerLink="/projets" routerLinkActive="active">Projets</a>
+  <a href="#apropos" class="nav-link" (click)="scrollToSection('apropos')">À propos</a>
+  <a href="#experiences" class="nav-link" (click)="scrollToSection('experiences')">Expériences</a>
+  <a href="#formations" class="nav-link" (click)="scrollToSection('formations')">Formations</a>
+  <a href="#projets" class="nav-link" (click)="scrollToSection('projets')">Projets</a>
 </nav>
-<router-outlet></router-outlet>
+
+<!-- Contenu principal -->
+<main>
+  <app-home-page></app-home-page>
+</main>

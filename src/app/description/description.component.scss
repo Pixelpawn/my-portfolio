@@ -6,24 +6,27 @@
   background: #f7f7f7; /* Couleur de fond douce */
   border-radius: 12px;
   gap: 2rem; /* Espace entre image et texte */
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   flex-wrap: wrap; /* Pour être responsive */
 }
 
 .left-description-is-image {
-  flex: 0 0 180px; /* Largeur fixe pour l'image */
+  flex: 0 0 auto; /* Laisser l'image prendre sa taille naturelle */
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 150px;
-  max-width: 220px;
-  height: 220px;
-  background: #e0e0e0;
+  max-width: 300px; /* Ajusté pour permettre des images plus grandes si nécessaire */
+  height: auto; /* Laisser la hauteur s'adapter */
   border-radius: 10px;
-  overflow: hidden;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #444;
+  overflow: visible; /* Supprimer overflow: hidden pour éviter de rogner l'image */
+
+  img {
+    width: 100%;
+    height: auto; /* Préserver les proportions */
+    object-fit: contain; /* S'assurer que l'image est entièrement visible */
+    border-radius: 10px; /* Garder le style arrondi */
+  }
 }
 
 .right-description-is-text {
@@ -47,10 +50,20 @@
     gap: 1rem;
     padding: 1rem;
   }
+
   .left-description-is-image {
     margin-bottom: 1rem;
     width: 100%;
-    height: 160px;
-    max-width: 100%;
+    max-width: 100%; /* S Focaliser sur l'image entière */
+    height: auto; /* Laisser la hauteur s'adapter */
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
+}
+
+.description-text{
+  text-align: justify;
 }

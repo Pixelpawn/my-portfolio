@@ -1,13 +1,18 @@
 .navbar {
   display: flex;
   gap: 2rem;
-  background: #222;
+  background: #222; /* Fond sombre */
   padding: 1rem 2rem;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: fixed; /* Rendre la navbar fixe */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Assurer que la navbar reste au-dessus du contenu */
 }
-.navbar a {
+
+.nav-link {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -15,11 +20,57 @@
   transition: color 0.2s;
   padding-bottom: 2px;
 }
-.navbar a.active,
-.navbar a:hover {
-  color: #00aaff;
+
+.nav-link.active,
+.nav-link:hover {
+  color: #00aaff; /* Bleu pour le thème */
   border-bottom: 2px solid #00aaff;
 }
+
 main {
   padding: 2rem;
+  margin-top: 70px; /* Compenser la hauteur de la navbar fixe */
+}
+
+/* Défilement fluide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style des sections */
+section {
+  min-height: 100vh; /* Chaque section occupe la hauteur de l'écran */
+  padding: 2rem;
+  scroll-margin-top: 70px; /* Éviter que la navbar ne chevauche les sections */
+}
+
+h1 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+    margin-top: 100px; /* Ajuster pour mobile */
+  }
 }

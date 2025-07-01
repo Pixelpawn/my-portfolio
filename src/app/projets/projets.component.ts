@@ -11,11 +11,35 @@ export class ProjetsComponent {
 items = [
 
   {
+  title: 'my-portfolio',
+  underTitle: 'Technologies utilisées : Angular',
+  description: "Mise en place de mon portfolio en version web.",
+  year: '2025'},
+
+  {
+  title: 'Datracker',
+  underTitle: 'Technologies utilisées : Python',
+  description: "Mise en place d'une application permettant de sensibiliser les utilisateurs de l'importance de bien gérer ses données en ligne. \n\n Cette application est une introcution à l'OSINT. Des fonctionnalitées tel que la recherche de présence d'adresse e-mail et pseudo ont été développées avec une introduction à google dorks\n\n ",
+  year: '2024'
+},
+
+
+
+
+  {
+  title: 'Traceur GPS',
+  underTitle: 'Technologies utilisées : PHP, MySQL, CSS, HTML, JavaScript, JQuery, C#, Java',
+  description: "Mise en place d'un service permettant aux utilisateurs de calculer en temps réel la distance parcourue. \n\n Une version web, de bureau et mobile a été développée pour l'utiliser sur tout les appareils",
+  year: '2023'
+},
+
+  {
     title: 'Système solaire',
     underTitle: 'Technologies utilisées : HTML et CSS',
     description: "J'ai développé un site web sur le système solaire expliquant les caractéristiques des différents objets dans le système solaire",
-    year: '2022'
+    year: '2020'
   },
+
   {
     title: 'Digicode',
     underTitle: 'Technologies utilisées : PHP et MySQL',
@@ -43,32 +67,11 @@ items = [
   year: '2023'
 },
 
-{
-  title: 'Traceur GPS',
-  underTitle: 'Technologies utilisées : PHP, MySQL, CSS, HTML, JavaScript, JQuery, C#, Java',
-  description: "Mise en place d'un service permettant aux utilisateurs de calculer en temps réel la distance parcourue. \n\n Une version web, de bureau et mobile a été développée pour l'utiliser sur tout les appareils",
-  year: '2023'
-},
 
-{
-  title: 'Datracker',
-  underTitle: 'Technologies utilisées : Python',
-  description: "Mise en place d'une application permettant de sensibiliser les utilisateurs de l'importance de bien gérer ses données en ligne. \n\n Cette application est une introcution à l'OSINT. Des fonctionnalitées tel que la recherche de présence d'adresse e-mail et pseudo ont été développées avec une introduction à google dorks\n\n ",
-  year: '2024'
-},
 
-{
-  title: 'Datracker',
-  underTitle: 'Technologies utilisées : Python',
-  description: "Mise en place d'une application permettant de sensibiliser les utilisateurs de l'importance de bien gérer ses données en ligne. \n\n Cette application est une introcution à l'OSINT. Des fonctionnalitées tel que la recherche de présence d'adresse e-mail et pseudo ont été développées avec une introduction à google dorks\n\n ",
-  year: '2024'
-},
 
-{
-  title: 'my-portfolio',
-  underTitle: 'Technologies utilisées : Angular',
-  description: "Mise en place de mon portfolio en version web.",
-  year: '2025'},
+
+
 ]
 
 flippedIndex: number | null = null;
