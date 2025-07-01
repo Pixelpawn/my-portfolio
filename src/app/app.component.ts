@@ -18,15 +18,15 @@ export class AppComponent {
   }
 
   @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    sections.forEach((section, index) => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= 100 && rect.bottom >= 100) {
-        navLinks.forEach(link => link.classList.remove('active'));
-        navLinks[index]?.classList.add('active');
-      }
-    });
-  }
+onScroll(event: Event) {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link:not([href*="cv"]):not([href*="github"])');
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 100 && rect.bottom >= 100) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      navLinks[index]?.classList.add('active');
+    }
+  });
+}
 }
