@@ -15,7 +15,7 @@ export class FormationsComponent {
     {
   title: 'Bachelor Sécurité Informatique',
   underTitle: 'CFA de la salle à Rennes',
-  description: 'Quelques mots sur la formation…',
+  description: "J'ai abordé les thèmes majeurs de la cybersécurité comme le développement sécurisé, les systèmes et réseaux mais également l'OSINT et la supervision ",
   year: '2024'
 },
 
@@ -42,7 +42,7 @@ export class FormationsComponent {
 {
   title: 'BTS Service Informatique aux organisations',
   underTitle: 'Pôle Supérieur De La Salle à Rennes',
-  description: "Formation d'une durée de deux ans sur le développement web et logiciel. \nLangages et frameworks appris : PHP, MySQL, CSS3, HTML5, JavaScript, JQuery, Java, Python",
+  description: "Formation d'une durée de deux ans sur le développement web et logiciel. \n J'ai appris à utiliser PHP, MySQL, CSS3, HTML5, JavaScript, JQuery, Java, Python",
   year: '2023'
 },
 
