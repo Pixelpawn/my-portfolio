@@ -14,7 +14,7 @@ body, html {
 nav.navbar {
   display: flex !important;
   gap: 2rem !important;
-  background: #222 !important;
+  background: #1B263B !important;
   padding: 1rem 0 !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
   position: fixed !important;
@@ -38,8 +38,8 @@ nav.navbar {
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-  color: #00aaff !important;
-  border-bottom: 2px solid #00aaff !important;
+  color: #00ff88 !important;
+  border-bottom: 2px solid #00ff88 !important;
 }
 
 .navbar .nav-link[href*="cv"] {
