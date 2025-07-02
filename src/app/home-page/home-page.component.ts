@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-//import { ProfileCom } from '../profile-section/.component';
 import { FormationsComponent } from '../formations/formations.component';
 import { ExperiencesComponent } from '../experiences/experiences.component';
 import { ProjetsComponent } from '../projets/projets.component';

@@ -28,14 +28,14 @@ export class ExperiencesComponent {
     title: 'Stage ',
     underTitle: 'Mairie de Fougères',
     description: "Développement de nouvelles fonctionnalités pour des sites webs développé en symfony et JavaScript.\n\nÉlaboration d'une interface permettant de regrouper les différents sites web des chaufferies de la ville en HTML, CSS et Javascript. La connexion identifiant/mot de passe s'effectue avec LDAP.",
-    year: '2022'
+    year: 'mai 2022 - juin 2022'
   },
 
   {
     title : 'CDD',
     underTitle : 'Tessi',
     description : "Contrôle de la conformité des documents dans le cadre d'un crédit-bail pour les professionnels",
-    year : 2025,
+    year : ' février 2025 - mars 2025',
   },
 
   {

@@ -1,13 +1,15 @@
 .formations-section-bg {
   background-color: #a6e1fa  ;
   background-size: 100%;
-  //width: 100vw;
   padding-bottom:5rem;
   padding-top: 5rem;
-  //border-radius: 0 0 32px 32px;
   box-shadow: 0 8px 24px rgba(30,30,30,0.06);
-  //max-width: 1200px;
   margin: 0 auto;
+  left: 0;
+  right: 0;
+    z-index: 1000; 
+  gap: 2rem;
+
 }
 
 .formations-section-bg h2 {

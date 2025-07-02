@@ -1,11 +1,14 @@
 section#apropos.description-section-bg {
   background-color: #e9ecef;
   box-shadow: 0 8px 24px rgba(30, 30, 30, 0.06);
-  padding: 2rem 2rem;
-  width: 100%;
-  margin: 0 auto;
+  padding: 5rem 0;
+  width: 100vw; /* Pleine largeur de la fenêtre */
+  margin: 0; /* Supprimer toute marge */
   box-sizing: border-box;
   border-radius: 0;
+  position: relative; /* Conserver dans le flux normal */
+  left: 0; /* Coller au bord gauche */
+  right: 0; /* Coller au bord droit */
 }
 
 section#apropos.description-section-bg h2 {
@@ -19,11 +22,15 @@ section#apropos.description-section-bg h2 {
 
 .description-content {
   display: flex;
-  align-items: flex-start; 
-  justify-content: center; 
-  gap: 2rem; 
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin: 0;
+  width: 100%;
+  max-width: 1200px; /* Limiter le contenu, optionnel */
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .left-description-is-image {
@@ -32,12 +39,12 @@ section#apropos.description-section-bg h2 {
   max-width: 300px;
   height: auto;
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: center;
   border-radius: 10px;
   overflow: visible;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 
   img {
     width: 100%;
@@ -56,7 +63,7 @@ section#apropos.description-section-bg h2 {
   align-items: flex-start;
   justify-content: flex-start;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   color: #222;
 }
 
@@ -72,7 +79,11 @@ section#apropos.description-section-bg h2 {
 
 @media (max-width: 700px) {
   section#apropos.description-section-bg {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
+    width: 100vw;
+    margin: 0;
+    left: 0;
+    right: 0;
   }
 
   section#apropos.description-section-bg h2 {
@@ -84,12 +95,14 @@ section#apropos.description-section-bg h2 {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: 0 1rem;
+    max-width: 100%;
   }
 
   .left-description-is-image {
     width: 100%;
-    max-width: 300px; 
-    margin: 0 auto; 
+    max-width: 300px;
+    margin: 0 auto;
     padding: 0;
   }
 

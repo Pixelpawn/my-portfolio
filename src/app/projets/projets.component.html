@@ -6,13 +6,14 @@
          [class.flipped]="flippedIndex === i"
          (click)="toggleFlip(i)">
       <div class="card">
-        <!-- Face avant -->
         <div class="card-front">
           <h3>{{ item.title }}</h3>
+          <br>
+          <br>  
+          <br>
           <p><strong>{{ item.underTitle }}</strong></p>
           <span class="date">{{ item.year }}</span>
         </div>
-        <!-- Face arrière -->
         <div class="card-back">
           <p style="white-space: pre-line;">{{ item.description }}</p>
         </div>

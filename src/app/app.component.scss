@@ -1,15 +1,28 @@
+/* Styles globaux pour éviter marges/paddings parasites */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .navbar {
   display: flex;
   gap: 2rem;
-  background: #222; /* Fond sombre */
-  padding: 1rem 2rem;
-  border-radius: 0 0 8px 8px;
+  background: #222;
+  padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  position: fixed; /* Rendre la navbar fixe */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Assurer que la navbar reste au-dessus du contenu */
+  width: 100vw;
+  z-index: 1000;
 }
 
 .nav-link {
@@ -19,29 +32,58 @@
   font-size: 1.1rem;
   transition: color 0.2s;
   padding-bottom: 2px;
+  position: relative;
 }
 
 .nav-link.active,
 .nav-link:hover {
-  color: #00aaff; /* Bleu pour le thème */
+  color: #00aaff;
   border-bottom: 2px solid #00aaff;
 }
 
-main {
-  padding: 2rem;
-  margin-top: 70px; /* Compenser la hauteur de la navbar fixe */
+.nav-link[href*="cv"] {
+  position: relative;
+  padding-left: 1.8rem;
 }
 
-/* Défilement fluide */
+.nav-link[href*="cv"]::before {
+  content: '\1F4C4';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+.nav-link[href*="github"] {
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.nav-link[href*="github"]::before {
+  content: '\1F5A5';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+main {
+  padding: 0;
+  margin: 0; /* Supprimer toute marge */
+  margin-top: 70px; /* Compenser la navbar */
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Style des sections */
 section {
-  min-height: 100vh; /* Chaque section occupe la hauteur de l'écran */
-  padding: 2rem;
-  scroll-margin-top: 70px; /* Éviter que la navbar ne chevauche les sections */
+  min-height: 100vh;
+  padding: 0;
+  margin: 0; /* Supprimer toute marge */
+  scroll-margin-top: 70px;
 }
 
 h1 {
@@ -55,11 +97,10 @@ p {
   line-height: 1.6;
 }
 
-/* Responsive design */
 @media (max-width: 700px) {
   .navbar {
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     border-radius: 0;
   }
 
@@ -67,10 +108,17 @@ p {
     margin: 0.5rem 0;
     width: 100%;
     text-align: center;
+    padding-left: 0;
+  }
+
+  .nav-link[href*="cv"]::before,
+  .nav-link[href*="github"]::before {
+    display: none;
   }
 
   main {
-    padding: 1rem;
-    margin-top: 100px; /* Ajuster pour mobile */
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
   }
 }
