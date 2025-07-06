@@ -1,0 +1,21 @@
+<section id="formations" class="formations-section-bg">
+  <h2>Mon parcours de formation</h2>
+  <div class="cards-list">
+    <div class="card-container"
+         *ngFor="let item of items; let i = index"
+         [class.flipped]="flippedIndex === i"
+         (click)="toggleFlip(i)">
+      <div class="card">
+        <div class="card-front">
+          <h3 style="text-align: center;">{{ item.title }}</h3>
+          <br><br>
+          <p class="underTitle"><strong>{{ item.underTitle }}</strong></p>
+          <span class="date">{{ item.year }}</span>
+        </div>
+        <div class="card-back">
+          <p style="white-space: pre-line;">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

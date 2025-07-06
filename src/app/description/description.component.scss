@@ -1,0 +1,120 @@
+section#apropos.description-section-bg {
+  background-color: #2D3436;
+  box-shadow: 0 8px 24px rgba(30, 30, 30, 0.06);
+  padding: 5rem 0;
+  width: 100vw; 
+  margin: 0; 
+  box-sizing: border-box;
+  border-radius: 0;
+  position: relative; 
+  left: 0;
+  right: 0; 
+  color: #F5F6FA;
+
+
+}
+section#apropos.description-section-bg p{
+  color:#F5F6FA !important ;
+}
+section#apropos.description-section-bg h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #F5F6FA;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.description-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px; /* Limiter le contenu, optionnel */
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.left-description-is-image {
+  flex: 0 0 auto;
+  min-width: 150px;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+.right-description-is-text {
+  flex: 1;
+  min-width: 260px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.right-description-is-text p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.13rem;
+}
+
+.description-text {
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  section#apropos.description-section-bg {
+    padding: 3rem 0;
+    width: 100vw;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+
+  section#apropos.description-section-bg h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .description-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .left-description-is-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .right-description-is-text {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
