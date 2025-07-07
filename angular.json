@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+          "outputPath": "docs",  
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -33,7 +34,7 @@
               "src/styles.scss"
             ],
             "server": "src/main.server.ts",
-            "outputMode": "server",
+            "outputMode": "static",
             "ssr": {
               "entry": "src/server.ts"
             }
@@ -96,6 +97,9 @@
               "src/styles.scss"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

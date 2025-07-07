@@ -79,4 +79,4 @@ flippedIndex: number | null = null;
   toggleFlip(index: number) {
     this.flippedIndex = this.flippedIndex === index ? null : index;
   }
-}
+} 
