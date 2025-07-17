@@ -42,7 +42,7 @@ export class ExperiencesComponent {
     title : 'Intérim',
     underTitle : 'Novandie',
     description : "Mise sur palette de caisses de yaourt",
-    year : 2025,
+    year : 'avril 2025 - juin 2025',
   }
   
   
